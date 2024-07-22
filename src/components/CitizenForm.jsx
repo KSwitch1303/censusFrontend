@@ -16,6 +16,11 @@ const CitizenForm = ({ onAddCitizen }) => {
         const address = `${lga}, ${state}`;
         onAddCitizen({ name, age, state, lga, dob, address, gender });
         setName('');
+        setState('');
+        setGender('');
+        setLga('');
+        setDob('');
+        alert('Citizen added successfully');
         // setAge('');
         // setAddress('');
     };
