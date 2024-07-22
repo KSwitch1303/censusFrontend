@@ -3,6 +3,7 @@ import CitizenForm from './components/CitizenForm';
 import CitizenList from './components/CitizenList';
 import AgeChart from './components/AgeChart';
 import './App.css';
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5017';
 
 const App = () => {
     const [citizens, setCitizens] = useState([]);
@@ -12,7 +13,7 @@ const App = () => {
     }, []);
 
     const fetchCitizens = async () => {
-        const response = await fetch('http://localhost:5000/api/citizens');
+        const response = await fetch(`${API_URL}/api/citizens`);
         const data = await response.json();
         setCitizens(data);
         // const sortedByAddress = data.sort((a, b) => a.address.localeCompare(b.address));
@@ -20,7 +21,7 @@ const App = () => {
     };
 
     const addCitizen = async (citizen) => {
-        const response = await fetch('http://localhost:5000/api/citizens', {
+        const response = await fetch(`${API_URL}/api/citizens`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
