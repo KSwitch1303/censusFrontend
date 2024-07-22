@@ -1,0 +1,15 @@
+.citizen-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.citizen-list .citizen-item {
+  margin-bottom: 15px;
+}
+
+.citizen-list .citizen-item:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,29 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  width: 100%;
+}
+
+.row {
+  width: 100%;
+}
+
+.citizen-form {
+  margin-bottom: 20px;
+}
+
+.citizen-list {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+}
+
+.citizen-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  text-align: left;
+}

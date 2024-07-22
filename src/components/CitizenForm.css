@@ -1,0 +1,42 @@
+.citizen-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.citizen-form .form-group {
+  margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.citizen-form .form-control {
+  height: 45px;
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #ced4da;
+}
+
+.citizen-form .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  height: 45px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.citizen-form .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
